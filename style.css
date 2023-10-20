@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+}
+
+.crosshair {cursor: crosshair;}
+
+.not-allowed {cursor: not-allowed;}
+
+.grab {cursor: -webkit-grab; cursor: grab;}
+
+  #fade {
+    background-color:salmon
+  }

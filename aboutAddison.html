@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/addisonliang/GitHub/new_file/style.css">
+    <link rel="stylesheet" href="/Users/addisonliang/GitHub/new_file/style.js">
+
+    <script>
+    function changedog() {
+      document.getElementById("chi").src = "https://media.tenor.com/NKfb5sAbD3YAAAAC/chihuahua-angry.gif";
+    }
+    function normaldog() {
+      document.getElementById("chi").src = "https://media.giphy.com/media/RQSuZfuylVNAY/giphy.gif";
+    }
+
+
+
+function move_wow() {
+  var elem = document.getElementById("ChangeMe");   
+  var pos = 0;
+  setInterval(frame, 10);
+  function frame() {
+      pos++; 
+      elem.style.margin = pos + 'px'; 
+    }
+  }
+
+  </script>
+
     <title>Document</title>
 </head>
 <body style="background:red;">
@@ -46,7 +71,7 @@
             <p style="font-family:verdana">Addison Liang (He/Him)</p>
             I am a senior at Oakland Technical High School and I am in the Computer Academy. I have been interested in CS for 5 years, participating in several programs and classes related to CS. I hope to major in CS and possibly cybersecurity 
             <br>
-            <img src="https://media.giphy.com/media/RQSuZfuylVNAY/giphy.gif">
+            <img id="chi" class="grab" onmouseover="changedog()" onmouseout = "normaldog()" src="https://media.giphy.com/media/RQSuZfuylVNAY/giphy.gif" height="200" width="200">
         </div>
         <div class="col border">
           <h4 style="background:black;color:white;"><pre>          __
@@ -61,10 +86,13 @@
             <li>Color: Blue</li>
             <li>Food: Sushi</li>
             <li>Sport: Soccer</li>
-            <li>Subject: Copmuter Science</li>
-            <li>Animal: Orca</li>
+            <li>Subject: Computer Science</li>
+            <li>Animal: Orca Panda Hybrid</li>
         </div>
       </div>
+      <br>
+      <p><button id="pp" onclick="move_wow()">Cool Beans</button></p>
+      <p id="ChangeMe" style="background:red;" onclick="this.style.background = 'blue'">Click Me 😎</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
